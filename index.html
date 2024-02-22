@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Traore Aboubacar</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">A propos</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Traore Aboubacar</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">A propos</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img style="border-radius: 50%; box-shadow: 0 4px 10px #00000045;" src="aboubacar.jpg"
+        alt="John Doe profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, je m'appelle</p>
+      <h1 class="title">Traore Aboubacar</h1>
+      <p class="section__text__p2"></p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('resume-example.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://linkedin.com/'" />
+        <img src="github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Connaissez en plus</p>
+    <h1 class="title">Sur mon sujet</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="aboubacar2.jpg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+
+        <div style="font-size: 18px;line-height: 30px;" class="text-container">
+          <p>
+            En tant qu'étudiant passionné par le développement web, chaque jour est une nouvelle aventure dans le monde
+            captivant de la création en ligne. Armé de mon clavier et de ma créativité, je plonge tête la première dans
+            le langage des machines pour donner vie à des idées et des concepts.
+            Mon parcours dans le développement web est une fusion d'apprentissage continu et de défis stimulants. Des
+            premiers pas dans le HTML et le CSS, jusqu'à la maîtrise des frameworks JavaScript et des bibliothèques CSS,
+            chaque étape a été une occasion d'explorer de nouvelles possibilités et d'élargir mes horizons.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explorez Mon</p>
+    <h1 class="title">Experience</h1>
+
+    <div class="technologies-container">
+      <div class="pattern-tech">
+        <img src="html5.svg" alt="HTML">
+        <p>HTML5</p>
+      </div>
+
+      <div class="pattern-tech">
+        <img src="css3-alt.svg" alt="CSS">
+        <p>CSS3</p>
+      </div>
+
+      <div class="pattern-tech">
+        <img src="js.svg" alt="JAVASCRIPT">
+        <p>JAVASCRIPT</p>
+      </div>
+
+      <div class="pattern-tech">
+        <img src="react.svg" alt="REACT">
+        <p>REACT</p>
+      </div>
+
+      <div class="pattern-tech">
+        <img src="sass.svg" alt="SASS">
+        <p>SASS</p>
+      </div>
+
+      <div class="pattern-tech">
+        <img src="github.svg" alt="Github">
+        <p>GITHUB</p>
+      </div>
+
+      <div class="pattern-tech">
+        <img src="bootstrap.svg" alt="BOOTSTRAP">
+        <p>BOOTSTAP</p>
+      </div>
+
+      <div class="pattern-tech">
+        <img src="php.svg" alt="PHP">
+        <p>PHP</p>
+      </div>
+
+      <div class="pattern-tech">
+        <img src="database-solid.svg" alt="SQL">
+        <p>MySQL</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="video-pattern">
+      <video controls src="Gender App - Google Chrome 2023-12-19 08-48-13.mp4"></video>
+      <div>
+        <p>GENDER PREDICTOR</p>
+        <a href="https://github.com/leodk293/PredictorGender" target="_blank">SEE CODE</a>
+      </div>
+    </div>
+
+    <div class="video-pattern">
+      <video controls src="BMI-Calculator.mp4"></video>
+      <div>
+        <p>BMI CALCULATOR</p>
+        <a href="https://github.com/leodk293/BIMproject" target="_blank">SEE CODE</a>
+      </div>
+    </div>
+
+    <div class="video-pattern">
+      <video controls src="Country-App.mp4"></video>
+      <div>
+        <p>DATA COUNTRY</p>
+        <a href="https://github.com/leodk293/CountryApp" target="_blank">SEE CODE</a>
+      </div>
+    </div>
+
+    <div class="video-pattern">
+      <video controls src="School-Website.mp4"></video>
+      <div>
+        <p>SCHOOL WEBSITE</p>
+        <a href="https://github.com/leodk293/school-website/tree/main" target="_blank">SEE CODE</a>
+      </div>
+    </div>
+
+    <div class="video-pattern">
+      <video controls src="Foodie - Google Chrome 2023-12-03 10-53-39.mp4"></video>
+      <div>
+        <p>RESTAURENT WEBSITE</p>
+        <a href="https://lnkd.in/efeVCSvU" target="_blank">SEE CODE</a>
+      </div>
+    </div>
+
+    <div class="video-pattern">
+      <video controls src="GPT.mp4"></video>
+      <div>
+        <p>GPT CLONE</p>
+        <a href="https://github.com/leodk293/chatGPT" target="_blank">SEE CODE</a>
+      </div>
+    </div>
+
+    <div class="video-pattern">
+      <video controls src="NEWS.mp4"></video>
+      <div>
+        <p>NEWS APP</p>
+        <a href="https://github.com/leodk293/newsApp" target="_blank">SEE CODE</a>
+      </div>
+    </div>
+
+    <div class="video-pattern">
+      <video controls src="Portfolio.mp4"></video>
+      <div>
+        <p>PORTFOLIO MAKE IN REACT</p>
+        <a href="https://github.com/leodk293/Portfolio-react" target="_blank">SEE CODE</a>
+      </div>
+    </div>
+
+    <div class="video-pattern">
+      <video controls src="weather-app.mp4"></video>
+      <div>
+        <p>Weather App</p>
+        <a href="https://github.com/leodk293/weather-app" target="_blank">SEE CODE</a>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contactez Moi</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:stagesearch01@gmail.com">stagesearch01@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/aboubacar-traore-495736252/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; Traore Aboubacar. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
